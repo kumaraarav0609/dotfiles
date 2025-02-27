@@ -18,10 +18,9 @@ return {
       local lspconfig = require("lspconfig")
 
       require("mason").setup({
-        ensure_installed = { "prettier", "stylua" } })
-      require("mason-lspconfig").setup({
-        ensure_installed = { "ts_ls", "html", "lua_ls" }
+        ensure_installed = { "prettier", "stylua", "ts_ls", "html", "lua_ls" }
       })
+      require("mason-lspconfig").setup()
 
       -- Setup LSP servers
       lspconfig.ts_ls.setup({
@@ -44,10 +43,6 @@ return {
             require('luasnip').lsp_expand(args.body) -- For `luasnip` users.
           end,
         },
-        window = {
-          -- completion = cmp.config.window.bordered(),
-          -- documentation = cmp.config.window.bordered(),
-        },
         mapping = cmp.mapping.preset.insert({
           ['<C-b>'] = cmp.mapping.scroll_docs(-4),
           ['<C-f>'] = cmp.mapping.scroll_docs(4),
@@ -57,10 +52,7 @@ return {
         }),
         sources = cmp.config.sources({
           { name = 'nvim_lsp' },
-          { name = 'vsnip' }, -- For vsnip users.
-          -- { name = 'luasnip' }, -- For luasnip users.
-          -- { name = 'ultisnips' }, -- For ultisnips users.
-          -- { name = 'snippy' }, -- For snippy users.
+          { name = 'luasnip' }, -- For luasnip users.
         }, {
           { name = 'buffer' },
         })
@@ -96,5 +88,5 @@ return {
         matching = { disallow_symbol_nonprefix_matching = false }
       })
     end
-  }
+  },
 }
