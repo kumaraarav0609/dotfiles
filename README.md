@@ -10,7 +10,7 @@
 
 My personal dotfiles for a modern Linux desktop environment. This repository contains configurations for various tools and applications that make up my development and desktop environment.
 
-##  Features
+## 🛠️ Features
 
 - **Window Manager**: [Hyprland](https://hyprland.org/) - A dynamic tiling Wayland compositor
 - **Shell**: [Fish](https://fishshell.com/) - A smart and user-friendly command line shell
@@ -21,18 +21,18 @@ My personal dotfiles for a modern Linux desktop environment. This repository con
 - **Logout Menu**: [Wlogout](https://github.com/ArtsyMacaw/wlogout) - A wayland logout menu
 - **Theme**: [Catppuccin Mocha](https://github.com/catppuccin/catppuccin) - A beautiful dark theme applied across all applications (GTK, terminal, editor, etc.)
 
-## 󰹑 Screenshots
+## 📺 Screenshots
 
 ![screenshot](screenshots/1.png)
 ![screenshot](screenshots/2.png)
 ![screenshot](screenshots/3.png)
 ![screenshot](screenshots/4.png)
 
-##  Requirements
+## ⚙️ Requirements
 
 - A GNU/Linux distribution (preferably Arch-based as I do not know about the compatibility of these packages on other distros)
 
-## 󰏓 Installation
+## 📦 Installation
 
 1. Install required packages:
 
